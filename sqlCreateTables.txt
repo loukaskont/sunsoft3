@@ -1,0 +1,51 @@
+CREATE TABLE NeaOdos_Protocol.wf.Account (
+	accountID int IDENTITY(0,1) NOT NULL,
+	Balance float NOT NULL,
+	accountType varchar(100) COLLATE SQL_Latin1_General_CP1253_CI_AS NULL,
+	CreationDate datetime NULL,
+	Currency varchar(100) COLLATE SQL_Latin1_General_CP1253_CI_AS NULL,
+	CustomerID int NULL,
+	Password varchar(100) COLLATE SQL_Latin1_General_CP1253_CI_AS NULL
+);
+
+
+
+CREATE TABLE NeaOdos_Protocol.wf.TransactionHistory (
+	TransactionDateTime datetime NULL,
+	Available decimal(38,0) NULL,
+	Fifty int NULL,
+	Twenty int NULL,
+	Ten int NULL,
+	TransactionID int NOT NULL,
+	TransactionHistoryID int IDENTITY(0,1) NOT NULL
+);
+
+
+
+CREATE TABLE NeaOdos_Protocol.wf.Customer (
+	CustomerID int IDENTITY(0,1) NOT NULL,
+	CustomerName varchar(100) COLLATE SQL_Latin1_General_CP1253_CI_AS NULL,
+	CustomerSurname varchar(100) COLLATE SQL_Latin1_General_CP1253_CI_AS NULL,
+	CustomerVat varchar(100) COLLATE SQL_Latin1_General_CP1253_CI_AS NULL,
+	CustomerPhone varchar(100) COLLATE SQL_Latin1_General_CP1253_CI_AS NULL
+);
+
+
+
+
+CREATE TABLE NeaOdos_Protocol.wf.[Transaction] (
+	TransactionID int IDENTITY(0,1) NOT NULL,
+	amount decimal(38,0) NOT NULL,
+	TransactionDate datetime NULL,
+	AccountID int NOT NULL
+);
+
+
+
+
+CREATE TABLE NeaOdos_Protocol.wf.Reserve (
+	reserveID int IDENTITY(0,1) NOT NULL,
+	Fifty int NULL,
+	Twenty int NULL,
+	Ten int NULL
+);
