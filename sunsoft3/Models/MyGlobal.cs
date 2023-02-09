@@ -9,10 +9,10 @@ namespace sunsoft3.Models
     public class MyGlobal
     {
         public string Username = "sa";
-        public string Password = "Ne@0d0sno2011!!";
-        public string Catalog = "NeaOdos_Protocol";
-        public string Data_Source = @"10.80.0.77";
-        public SqlConnection cnn = new SqlConnection("Data Source=10.80.0.77;Initial Catalog=NeaOdos_Protocol;User ID=sa;Password=Ne@0d0sno2011!!; MultipleActiveResultSets=true; Encrypt=false");
+        public string Password = "Nejjjj";
+        public string Catalog = "Nedd_juhu";
+        public string Data_Source = @"hjhjhjhh";
+        public SqlConnection cnn = new SqlConnection("Data Source=10.70.10.10;Initial Catalog=Prfgdgfdotocdddddol;User ID=sadss;Password=testpass!@#!!; MultipleActiveResultSets=true; Encrypt=false");
 
 
         public bool ValidateAFM(String tin)
